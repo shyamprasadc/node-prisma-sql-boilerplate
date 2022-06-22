@@ -1,8 +1,8 @@
 {
   "name": "node-typescript-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Typescript boilerplate for building APIs using Express and Prisma SQL",
+  "main": "src/server.ts",
   "scripts": {
     "start": "npm run build && npm run serve",
     "serve": "node -r dotenv/config build/server.js",
@@ -15,9 +15,30 @@
     "eslint": "eslint . --ext .js,.ts",
     "upgrade": "npm update --save-dev && npm update --save"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shyamprasadc/node-ts-prisma-sql-boilerplate.git"
+  },
+  "keywords": [
+    "node.js",
+    "boilerplate",
+    "typescript",
+    "express",
+    "postgresql",
+    "prisma",
+    "sql",
+    "es6",
+    "eslint",
+    "prettier"
+  ],
+  "author": {
+    "name": "Shyam Prasad",
+    "email": "shyamprasadc1995@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
     "@prisma/client": "^3.11.1",
     "bcrypt": "^5.0.1",
