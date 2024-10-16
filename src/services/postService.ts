@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
+// service to find posts and create posts
 const findPosts = async (): Promise<any> => {
   const posts = await prisma.post.findMany({
     include: { author: true },

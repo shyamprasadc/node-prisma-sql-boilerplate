@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
+// service to find and create users
 const findUsers = async (): Promise<any> => {
   const users = await prisma.user.findMany();
   return users;
